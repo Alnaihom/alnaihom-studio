@@ -13,7 +13,8 @@
     <meta property="og:description" content="تطبيقات وألعاب ومشاريع رقمية.">
     <meta property="og:locale" content="ar_AR">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f5e642'/%3E%3Cpath d='M32 14 14 50h9l3.5-8h11L41 50h9L32 14Zm0 15 3.6 8.5h-7.2L32 29Z' fill='%23111'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,17 +38,6 @@
                 <span class="brand-name">Alnaihom Studio</span>
             </a>
 
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="القائمة">
-                <span></span><span></span>
-            </button>
-
-            <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
-                <a href="#home">الرئيسية</a>
-                <a href="#projects">مشاريعنا</a>
-                <a href="#about">من نحن</a>
-                <a href="#contact" class="nav-cta">تواصل معنا</a>
-            </nav>
-
         </div>
     </header>
 
@@ -56,7 +46,7 @@
 
         <!-- ===== الرئيسية ===== -->
         <section class="hero" id="home">
-            <div class="container hero-grid">
+            <div class="container hero-inner">
 
                 <div class="hero-text">
                     <p class="hero-kicker">استوديو تطوير رقمي</p>
@@ -73,27 +63,6 @@
                         <a href="#about" class="btn btn-ghost">تعرّف علينا</a>
                     </div>
                 </div>
-
-                <aside class="hero-index" aria-label="أعمال الاستوديو">
-                    <h2 class="hero-index-title">أعمال الاستوديو</h2>
-
-                    <ul>
-                        <li>
-                            <a href="#return">
-                                <span class="idx-type">لعبة</span>
-                                <span class="idx-name">رحلة العودة</span>
-                                <svg class="idx-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#notes">
-                                <span class="idx-type">تطبيق</span>
-                                <span class="idx-name">الملاحظات</span>
-                                <svg class="idx-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
 
             </div>
         </section>
@@ -119,8 +88,7 @@
                             <span class="tag">لعبة</span>
                             <h3>رحلة العودة</h3>
                             <p>
-                                مشروع لعبة رقمية بطابع قصصي، يركز على الرحلة
-                                والاستكشاف والتجربة التفاعلية.
+                                مشروع لعبة أولي بطابع قصصي.
                             </p>
                         </div>
                     </article>
@@ -135,8 +103,8 @@
                             <span class="tag">تطبيق</span>
                             <h3>الملاحظات</h3>
                             <p>
-                                تطبيق ملاحظات يهدف إلى تقديم تجربة كتابة وتنظيم
-                                بسيطة ومرنة للمستخدم.
+                                تطبيق ملاحظات يتيح إضافة أنواع كثيرة من العناصر
+                                وتنظيمها وترتيبها بسهولة.
                             </p>
                         </div>
                     </article>
@@ -171,21 +139,6 @@
                         نركز على تقديم مشاريع عملية بتصميم واضح وتجربة استخدام بسيطة،
                         مع الاهتمام بالتفاصيل وجودة التنفيذ.
                     </p>
-
-                    <ul class="focus-list">
-                        <li>
-                            <strong>التطبيقات</strong>
-                            <span>أدوات بسيطة وواضحة للاستخدام اليومي.</span>
-                        </li>
-                        <li>
-                            <strong>الألعاب</strong>
-                            <span>تجارب تفاعلية بطابع قصصي.</span>
-                        </li>
-                        <li>
-                            <strong>التجارب البرمجية</strong>
-                            <span>أفكار رقمية تُجرَّب وتُطوَّر.</span>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
@@ -215,7 +168,6 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <p>© <span id="year">2026</span> Alnaihom Studio. جميع الحقوق محفوظة.</p>
-            <a href="#top" class="to-top">العودة للأعلى</a>
         </div>
     </footer>
 
