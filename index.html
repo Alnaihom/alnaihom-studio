@@ -90,6 +90,18 @@
                             <p>
                                 مشروع لعبة أولي بطابع قصصي.
                             </p>
+
+                            <div class="downloads">
+                                <!-- استبدل الرابطين بروابط ملفاتك من GitHub Releases -->
+                                <a class="btn-dl" href="https://github.com/USERNAME/REPO/releases/latest/download/return-android.apk" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8zm17 0A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8zm-4.97-5.84 1.3-1.3a.5.5 0 0 0-.7-.7l-1.48 1.48A5.97 5.97 0 0 0 12 1c-.96 0-1.86.23-2.66.63L7.85.15a.5.5 0 0 0-.7.7l1.31 1.31A5.97 5.97 0 0 0 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/></svg>
+                                    <span>تنزيل لأندرويد</span>
+                                </a>
+                                <a class="btn-dl" href="https://github.com/USERNAME/REPO/releases/latest/download/return-windows.zip" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v6.6H3V5.5zM11.5 4.3 21 3v8h-9.5V4.3zM3 12h7.5v6.6L3 17.5V12zM11.5 12H21v9l-9.5-1.3V12z"/></svg>
+                                    <span>تنزيل لويندوز</span>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -106,14 +118,22 @@
                                 تطبيق ملاحظات يتيح إضافة أنواع كثيرة من العناصر
                                 وتنظيمها وترتيبها بسهولة.
                             </p>
+
+                            <div class="downloads">
+                                <!-- استبدل الرابط برابط ملف التطبيق من GitHub Releases -->
+                                <a class="btn-dl" href="https://github.com/USERNAME/REPO/releases/latest/download/notes.apk" target="_blank" rel="noopener">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18c0 .55.45 1 1 1h1v3.5a1.5 1.5 0 0 0 3 0V19h2v3.5a1.5 1.5 0 0 0 3 0V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8A1.5 1.5 0 0 0 2 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 3.5 8zm17 0A1.5 1.5 0 0 0 19 9.5v7a1.5 1.5 0 0 0 3 0v-7A1.5 1.5 0 0 0 20.5 8zm-4.97-5.84 1.3-1.3a.5.5 0 0 0-.7-.7l-1.48 1.48A5.97 5.97 0 0 0 12 1c-.96 0-1.86.23-2.66.63L7.85.15a.5.5 0 0 0-.7.7l1.31 1.31A5.97 5.97 0 0 0 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/></svg>
+                                    <span>تنزيل لأندرويد</span>
+                                </a>
+                            </div>
                         </div>
                     </article>
 
                     <!--
                         لإضافة مشروع جديد: انسخ أحد الـ article أعلاه والصقه هنا،
                         ثم غيّر: id، مسار الشعار، النوع، العنوان، الوصف.
-                        (اختياري) أضف رابطًا داخل project-body:
-                        <a class="project-link" href="https://example.com">عرض المشروع</a>
+                        (اختياري) أضف زر تنزيل داخل <div class="downloads"> في project-body
+                        بنسخ أحد أزرار btn-dl أعلاه.
                     -->
 
                 </div>
@@ -160,12 +180,8 @@
     <!-- ===== التذييل ===== -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>
-                © <span id="year">2026 خخخجميع الحقوق محفوظة.</span>
-                <br>
-                Alnaihom Studio
-                <br>
-            </p>
+            <p>© <span id="year">2026</span> جميع الحقوق محفوظة.</p>
+            <p class="footer-brand">Alnaihom Studio</p>
         </div>
     </footer>
 
