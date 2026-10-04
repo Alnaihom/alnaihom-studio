@@ -1,26 +1,83 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* السنة في التذييل */
+    // =========================
+    // السنة الحالية
+    // =========================
+
     const year = document.getElementById("year");
-    if (year) year.textContent = new Date().getFullYear();
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
 
 
-    /* خط فاصل للرأس عند التمرير */
+    // =========================
+    // تغيير حالة الرأس عند التمرير
+    // =========================
+
     const header = document.querySelector(".site-header");
-    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+
+    if (header) {
+
+        const updateHeader = () => {
+            header.classList.toggle(
+                "is-scrolled",
+                window.scrollY > 8
+            );
+        };
+
+        updateHeader();
+
+        window.addEventListener(
+            "scroll",
+            updateHeader,
+            { passive: true }
+        );
+    }
 
 
-    /* بدائل أنيقة إذا لم تُرفع الصور بعد */
-    const markMissing = (img) => {
-        const holder = img.closest(".project-icon, .brand-mark");
-        if (holder) holder.classList.add("is-empty");
+    // =========================
+    // التعامل مع الصور المفقودة
+    // =========================
+
+    const markMissingImage = (img) => {
+
+        const holder = img.closest(
+            ".project-icon, .brand-mark"
+        );
+
+        if (holder) {
+            holder.classList.add("is-empty");
+        }
+
         img.remove();
     };
 
-    document.querySelectorAll(".project-icon img, .brand-mark img").forEach((img) => {
-        if (img.complete && img.naturalWidth === 0) markMissing(img);
-        else img.addEventListener("error", () => markMissing(img), { once: true });
+
+    const images = document.querySelectorAll(
+        ".project-icon img, .brand-mark img"
+    );
+
+
+    images.forEach((img) => {
+
+        if (
+            img.complete &&
+            img.naturalWidth === 0
+        ) {
+
+            markMissingImage(img);
+
+        } else {
+
+            img.addEventListener(
+                "error",
+                () => markMissingImage(img),
+                { once: true }
+            );
+
+        }
+
     });
+
 });
