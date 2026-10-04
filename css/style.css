@@ -276,7 +276,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     border-radius: 50%;
 }
 
-.project-body { width: 100%; }
+.project-body {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 .project-body h3 {
     margin-bottom: 12px;
@@ -291,6 +298,33 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     font-size: 16px;
     line-height: 2;
 }
+
+/* أزرار التنزيل */
+.downloads {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-dl {
+    min-height: 46px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #5a5528;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.btn-dl svg { width: 19px; height: 19px; fill: var(--yellow); transition: fill .2s; }
+.btn-dl:hover { background: var(--yellow); border-color: var(--yellow); color: var(--on-yellow); }
+.btn-dl:hover svg { fill: var(--on-yellow); }
 
 .project-link {
     display: inline-block;
@@ -339,15 +373,16 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 .site-footer { background: #0a0a09; border-top: 1px solid var(--line); }
 .footer-inner {
-    min-height: 88px;
+    padding: 30px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 2px;
     color: var(--faint);
     font-size: 14px;
 }
+.footer-brand { color: var(--muted); font-weight: 500; direction: ltr; }
 
 
 /* ================= حركة الدخول (مرة واحدة) ================= */
@@ -393,11 +428,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     .contact-box { flex-direction: column; align-items: stretch; text-align: start; gap: 24px; }
     .contact-box .btn { width: 100%; font-size: 15px; }
 
-    .footer-inner { padding: 22px 0; }
 }
 
 @media (max-width: 380px) {
     .hero-actions .btn { flex-basis: 100%; }
+    .btn-dl { flex: 1 1 100%; }
     .brand-name { font-size: 15px; }
 }
 
