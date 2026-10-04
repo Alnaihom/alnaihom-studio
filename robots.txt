@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alnaihom.github.io/alnaihom-studio/sitemap.xml
